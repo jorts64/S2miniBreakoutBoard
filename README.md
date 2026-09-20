@@ -10,7 +10,7 @@ I2C slave firmware included with examples of master code in Arduino and micropyt
 
 ## Slave mode
 
-* Arduino firmware. Micropython and arduino code master examples avalaible.
+* Arduino firmware. [Micropython](I2Cslave/master/micropython/ejemplo.py) and [Arduino](https://github.com/jorts64/S2MiniSlave/blob/main/examples/Basic/Basic.ino) master examples avalaible.
 * [Arduino library](https://github.com/jorts64/S2MiniSlave)
 * 16 I/O you can set individually as INPUT, INPUT_PULLUP, OUTPUT, PWM or ADC
 * 2 DAC outputs
