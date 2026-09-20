@@ -19,6 +19,10 @@ I2C slave firmware included with examples of master code in Arduino and micropyt
 
 ## Hardware restricctions
 
+As this board uses S2 mini microcontroller:
+
 * PWM are limited to 8 GPIO.
 * ADC witn GPIO15 will give bad results. This GPIO is internally connected to the LED builtiin.
+* ADC 11-16 don't be avalaible if WiFi is enabled. Neither DAC1 and DAC2.
+
 
