@@ -23,6 +23,6 @@ As this board uses S2 mini microcontroller:
 
 * PWM are limited to 8 GPIO.
 * ADC witn GPIO15 will give bad results. This GPIO is internally connected to the LED builtiin.
-* ADC 11-16 don't be avalaible if WiFi is enabled. Neither DAC1 and DAC2.
+* ADC 11-16 don't be avalaible if WiFi is enabled. Neither DAC1 and DAC2. But they still can be used as INPUT, INPUT_PULLUP, OUTPUT or PWM with WiFi enabled.
 
 
