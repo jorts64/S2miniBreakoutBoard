@@ -16,5 +16,7 @@ I2C slave firmware included with examples of master code in Arduino and micropyt
 * 2 DAC outputs
 * I2C address by jumper configuration, you can choose any I2C address. You can chain up to 128 S2 mini I2C slave devices. You could get 2048 configurable GPIO and 256 DAC inputs !!
 * Really cheap device, about $10 S2 mini included. You can order PCB from JLCPCB and buy electronic components at Aliexpress.
-
+>PWM are limited to 8 GPIO.
+>
+>ADC witn GPIO15 will give bad results. This GPIO is internally connected to the LED builtiin.
 
