@@ -21,7 +21,7 @@ I2C slave firmware included with examples of master code in Arduino and micropyt
 
 As this board uses S2 mini microcontroller:
 
-* DAC2 will give you error voltages because it's connected internally with a 10k pullup. You can improve the output wioth a R load [ESP32-S2 DAC2 Requires Load Resistor? ](https://github.com/espressif/arduino-esp32/issues/9324?utm_source=chatgpt.com)
+* DAC2 will give you error voltages because it's connected internally with a 10k pullup. You can improve the output with a R load [ESP32-S2 DAC2 Requires Load Resistor? ](https://github.com/espressif/arduino-esp32/issues/9324?utm_source=chatgpt.com)
 * PWM are limited to 8 GPIO.
 * ADC witn GPIO15 will give bad results. This GPIO is internally connected to the LED builtiin.
 * ADC 11-16 don't be avalaible if WiFi is enabled. Neither DAC1 and DAC2. But they still can be used as INPUT, INPUT_PULLUP, OUTPUT or PWM with WiFi enabled.
