@@ -109,21 +109,28 @@ class S2MiniSlave:
             packet
         )
 
+
     def _read(self, register, length):
         """
-        Selecciona registro y lee 'length' bytes.
+        Selecciona un registro del esclavo y lee 'length' bytes.
+
+        La selección del registro se hace con un write sin STOP,
+        seguido de la lectura.
         """
 
         self.i2c.writeto(
             self.address,
-            bytes([register]),
-            stop=False
+            bytes([register])
         )
 
         return self.i2c.readfrom(
             self.address,
             length
         )
+
+
+
+
 
     # ========================================================
     # Registros de 8 bits
