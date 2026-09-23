@@ -12,7 +12,7 @@ I2C slave firmware included with examples of master code in Arduino and micropyt
 
 ## Standalone mode
 
-You can use this PCB as a S2-mini breakout for development or  project pruposes. Some [micropython examples](standalone/micropython) included.
+You can use this PCB as a S2-mini breakout for development or project core. Some [micropython examples](standalone/micropython) included.
 
 In this mode you can put a 7xLED VCC COM module for easy development. Or a 8xLED module (with one pin in the air) as shown in picture:
 
