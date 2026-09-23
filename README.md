@@ -10,6 +10,14 @@ I2C slave firmware included with examples of master code in Arduino and micropyt
 * Easy access to all exposed pins of the S2 mini
 * I2C bus connector
 
+## Standalone mode
+
+You can use this PCB as a S2-mini breakout for development or  project pruposes. Some [micropython examples](standalone/micropython) included.
+
+In this mode you can put a 7xLED VCC COM module for easy development. Or a 8xLED module (with one pin in the air) as shown in picture:
+
+![](images/S2miniBreakoutLeds.png)
+
 ## Slave mode
 
 * Arduino firmware. [Micropython](I2Cslave/master/micropython/ejemplo.py) and [Arduino](https://github.com/jorts64/S2MiniSlave/blob/main/examples/Basic/Basic.ino) master examples avalaible.
@@ -18,6 +26,13 @@ I2C slave firmware included with examples of master code in Arduino and micropyt
 * 2 DAC outputs
 * I2C address by jumper configuration, you can choose any I2C address. You can chain up to 128 S2 mini I2C slave devices, if you ignore protocol restrictions [i2c address list: the 0x00–0x77 map](https://i2c.net/i2c-addresses/), so you could get 2048 configurable GPIO and 256 DAC inputs !!
 * Really cheap device, about $10 S2 mini included. You can order PCB from JLCPCB and buy electronic components at Aliexpress.
+
+In this mode you must set I2C address with jumpers to GND (active LOW) in pins 21, 34, 36, 37, 38, 39 & 40 (MSB...LSB). The slave in picture has I2C address 0x60:
+
+![](images/S2miniBreakoutJumpers.png)
+
+Female and Male right angle connectors at the top and bottom of the PCB lets chain our S2 mini slaves in the I2C bus.
+
 
 ## Hardware restricctions
 
